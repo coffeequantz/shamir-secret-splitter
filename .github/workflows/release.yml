@@ -84,6 +84,7 @@ jobs:
         with:
           releaseId: ${{ needs.create-release.outputs.release_id }}
           args: ${{ matrix.args }}
+          packageManager: npm
 
   publish-release:
     permissions:
